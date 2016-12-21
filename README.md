@@ -1,2 +1,0 @@
-# OtherPyLuaTblParser
-Code 1: 
