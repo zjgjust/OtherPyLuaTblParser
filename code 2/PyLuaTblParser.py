@@ -569,9 +569,13 @@ if __name__ == "__main__":
 	a2 = PyLuaTblParser()
 	a3 = PyLuaTblParser()
 	test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
-	a1.load(test_str)
+	s1 = '{array = {65,23,5}}'
+	s3 = '{dict = {mixed = {43,54.33,false,9,string = "value",}}}'
+	s4 = '{1,2}'
+	a1.load(s4)
 	d1 = a1.dumpDict()
-	a1.loadDict(d1)
+	print d1
+	#a1.loadDict(d1)
 	# a2.dumpLuaTable("error.txt")
-	a3.loadLuaTable("error.txt")
-	d3 = a3.dumpDict()
+	#a3.loadLuaTable("error.txt")
+	#d3 = a3.dumpDict()

@@ -5,8 +5,14 @@ class PatternError(Exception):
     """
     Lua Table 格式错误,格式错误是抛出
     """
-    def __str__(selfself):
+    def __str__(self):
         return repr("Lua table error!")
+class FileError(Exception):
+    """
+    文件操作错误
+    """
+    def __str__(self):
+        return repr("File error!")
 
 class PyLuaTblParser(object):
     """
@@ -26,7 +32,7 @@ class PyLuaTblParser(object):
 
     def load(self,s):
         self.length = len(s)
-        self.data,begin = self.parseTable(s,0)
+        self.data,begin = self.parserTable(s,0)
         begin = self.skip(s,begin)
         if begin < self.length:
             raise PatternError()
@@ -54,7 +60,7 @@ class PyLuaTblParser(object):
             fo.write(rStr)
             fo.close()
         except:
-            raise Exception()
+            raise FileError()
 
     def loadDict(self,d):
         rDic = {}
@@ -174,13 +180,14 @@ class PyLuaTblParser(object):
     def storeList(self,ls):
         """
         存储从字符串读取的数据到list
-        :param ls: list
+        :param ls: 字典,key为1,2,3,4
         :return: list
         """
-        rl = []
-        for it in ls:
-            rl.append(it)
-        return rl
+        rList = []
+        local_length = len(ls)
+        for i in range(1,local_length + 1):
+            rList.append(ls[i])
+        return rList
 
     def storeDic(self,d):
         """
@@ -188,12 +195,12 @@ class PyLuaTblParser(object):
         :param d: dic
         :return: dic
         """
-        dt = {}
+        rDic = {}
         for key,value in d.iteritems():
             if value == None:
                 continue
-            dt[key] = value
-        return dt
+            rDic[key] = value
+        return rDic
 
     def isValidChar(self,c):
         """
@@ -257,6 +264,7 @@ class PyLuaTblParser(object):
         ls = []
         #pattern 1,2
         if self.safeEqual(s,begin,begin + 1,"'") or self.safeEqual(s,begin,begin+1,'"'):
+            begin += 1
             while begin < self.length:
                 if(s[begin] == endStr):
                     return "".join(ls),begin + 1
@@ -466,7 +474,10 @@ class PyLuaTblParser(object):
                 if isEmpty:
                     return {},begin + 1
                 else:
-                    return self.store(rDic,rLen,isList),begin + 1
+                    if isList:
+                        return self.storeList(rDic),begin + 1
+                    else:
+                        return self.storeDic(rDic),begin + 1
 
             elif s[begin] == ',' or s[begin] == ';':
                 if isDelimited:
@@ -584,10 +595,12 @@ class PyLuaTblParser(object):
             else:
                 rList.append(char)
         rStr = "".join(rList)
-        if rStr.find('"') != -1:
+        if '"' in rStr:
             return "'" + rStr + "'"
-        elif rStr.find("'") != -1:
+        elif "'" in rStr:
             return '"' + rStr + '"'
+        else:
+            return "'" + rStr + "'"
 
     def encodeValue(self,value):
         if value == None or isinstance(value,bool):
@@ -621,7 +634,7 @@ class PyLuaTblParser(object):
         if isinstance(v,list):
             rList = []
             for value in v:
-                rList.append(self.encodeValue(value))
+                rList.append(self.loadValue(value))
             return rList
         elif isinstance(v,dict):
             rDic = {}
@@ -632,7 +645,27 @@ class PyLuaTblParser(object):
             return v
 
 if __name__ == '__main__':
-    s ='''189'''
-    print len(s)
-    parser = PyLuaTblParser(len(s))
-    print parser.parserString(s,0)
+    """
+    s1 = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
+    s2 = '{array = {65,23,5}, 1,2,3}'                                                   #right
+    s3 = '{dict = {mixed = {43,54.33,false,9,string = "value",}}}'
+    s4 = '{string = "value"}'
+    parser = PyLuaTblParser()
+    parser.load(s1)
+    d = parser.dumpDict()
+    print d
+
+    """
+    a1 = PyLuaTblParser()
+    a2 = PyLuaTblParser()
+    a3 = PyLuaTblParser()
+    #test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
+    test_str = '{array = {65,23,5,}}'
+    a1.load(test_str)
+    d1 = a1.dumpDict()
+
+    a2.loadDict(d1)
+    a2.dumpLuaTable('test.txt')
+    a3.loadLuaTable('test.txt')
+
+    d3 = a3.dumpDict()
