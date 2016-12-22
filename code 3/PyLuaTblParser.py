@@ -438,10 +438,13 @@ class PyLuaTblParser(object):
         elif s[begin] == 'n' or s[begin] == 't' or s[begin] == 'f':
             return self.parserSpecial(s,begin)
         elif self.safeEqual(s,begin,begin + 2,'[[') \
-        or self.safeEqual(s,begin,begin+1,"'") \
-        or self.safeEqual(s,begin,begin + 1,'"'):
+        or self.safeEqual(s,begin,begin+1,"'")      \
+        or self.safeEqual(s,begin,begin + 1,'"')    \
+        or s[begin] in '-0123456789.':
             return self.parserString(s,begin)
         else:
+            #tempStr1 = s[begin]
+            #tempStr2 = s[begin:begin + 2]
             raise PatternError()
 
     def isOverFlow(self,index):
@@ -659,13 +662,12 @@ if __name__ == '__main__':
     a1 = PyLuaTblParser()
     a2 = PyLuaTblParser()
     a3 = PyLuaTblParser()
-    #test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
-    test_str = '{array = {65,23,5,}}'
+    test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
+    #test_str = '{array = {65,23,5,}}'
     a1.load(test_str)
     d1 = a1.dumpDict()
-
     a2.loadDict(d1)
     a2.dumpLuaTable('test.txt')
     a3.loadLuaTable('test.txt')
-
     d3 = a3.dumpDict()
+    print d3
