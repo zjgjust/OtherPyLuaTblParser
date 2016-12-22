@@ -1,0 +1,220 @@
+File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 380, in __ascii_123
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 353, in __ascii_114
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 353, in __ascii_114
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 374, in __ascii_121
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 194, in __ascii_61
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 380, in __ascii_123
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 173, in __ascii_54
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 170, in __ascii_53
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 161, in __ascii_50
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 164, in __ascii_51
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 170, in __ascii_53
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 386, in __ascii_125
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 311, in __ascii_100
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 326, in __ascii_105
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 308, in __ascii_99
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 359, in __ascii_116
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 194, in __ascii_61
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 380, in __ascii_123
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 338, in __ascii_109
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 326, in __ascii_105
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 371, in __ascii_120
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 314, in __ascii_101
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 311, in __ascii_100
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 194, in __ascii_61
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 380, in __ascii_123
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 167, in __ascii_52
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 164, in __ascii_51
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 170, in __ascii_53
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 167, in __ascii_52
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 149, in __ascii_46
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 164, in __ascii_51
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 164, in __ascii_51
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 317, in __ascii_102
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 335, in __ascii_108
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 356, in __ascii_115
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 314, in __ascii_101
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 182, in __ascii_57
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 356, in __ascii_115
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 359, in __ascii_116
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 353, in __ascii_114
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 326, in __ascii_105
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 341, in __ascii_110
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 320, in __ascii_103
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 194, in __ascii_61
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 113, in __ascii_34
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 365, in __ascii_118
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 335, in __ascii_108
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 362, in __ascii_117
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 314, in __ascii_101
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 113, in __ascii_34
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 386, in __ascii_125
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 353, in __ascii_114
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 353, in __ascii_114
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 374, in __ascii_121
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 194, in __ascii_61
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 380, in __ascii_123
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 164, in __ascii_51
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 173, in __ascii_54
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 167, in __ascii_52
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 386, in __ascii_125
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 356, in __ascii_115
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 359, in __ascii_116
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 353, in __ascii_114
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 326, in __ascii_105
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 341, in __ascii_110
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 320, in __ascii_103
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 194, in __ascii_61
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 107, in __ascii_32
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 113, in __ascii_34
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 365, in __ascii_118
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 302, in __ascii_97
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 335, in __ascii_108
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 362, in __ascii_117
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 314, in __ascii_101
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 113, in __ascii_34
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 386, in __ascii_125
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 143, in __ascii_44
+    else: track_map[ord(s[0])](s[1:], d - 1)
+  File "C:\Users\user\Desktop\OtherPyLuaTblParser\code 3\track_map.py", line 385, in __ascii_125
+    if d ==0 or len(s) == 0: raise NonePattern("") 
