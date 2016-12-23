@@ -1,5 +1,3 @@
-from common import *
-
 class NonePattern(Exception):
     def __init__(self, arg):
         self.__arg = arg
