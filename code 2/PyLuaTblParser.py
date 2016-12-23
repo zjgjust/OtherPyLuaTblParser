@@ -548,34 +548,11 @@ class PyLuaTblParser():
 		return di
 
 if __name__ == "__main__":
-	"""
-	a = PyLuaTblParser()
-	test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
-	import json
-	a.load(test_str)
-	print "loaded lua table", json.dumps(a.data)
-	test_str1 = a.dump()
-	print "dumped lua table", test_str1
-	b = PyLuaTblParser()
-	b.load(test_str1)
-	print "loaded lua table", json.dumps(b.data)
-	print b.dumpDict()
-	test_str2 = '{x=-0xffp-2, y=45;--[[adsfasdf]==]asdfasfd--]]"a", "one", "two\\n", "three",[2]=3}'
-	a.load(test_str2)
-	print "loaded lua table", json.dumps(a.data)
-	"""
-	import json
+	s4 = """
+        {[97] = {{},{}},}
+        """
+	print s4
 	a1 = PyLuaTblParser()
-	a2 = PyLuaTblParser()
-	a3 = PyLuaTblParser()
-	test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
-	s1 = '{array = {65,23,5}}'
-	s3 = '{dict = {mixed = {43,54.33,false,9,string = "value",}}}'
-	s4 = '{1,2}'
 	a1.load(s4)
 	d1 = a1.dumpDict()
 	print d1
-	#a1.loadDict(d1)
-	# a2.dumpLuaTable("error.txt")
-	#a3.loadLuaTable("error.txt")
-	#d3 = a3.dumpDict()

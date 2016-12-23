@@ -27,12 +27,15 @@ class PyLuaTblParser(object):
     """
 
     def __init__(self,len = 0):
+        """
+        默认数据结构为字典
+        :param len: 0
+        """
         self.data = {}
         #self.length = None
         self.length = len
 
     def load(self,s):
-        #track_map.ascii(s, 10000000)
         self.length = len(s)
         self.data,begin = self.parserTable(s,0)
         begin = self.skip(s,begin)
@@ -182,7 +185,7 @@ class PyLuaTblParser(object):
     def storeList(self,dc):
         """
         存储从字符串读取的数据到list
-        :param ls: 字典,key为1,2,3,4
+        :param dc: 字典,key为1,2,3,4dc
         :return: list
         """
         rList = []
@@ -192,14 +195,14 @@ class PyLuaTblParser(object):
             rList.append(value)
         return rList
 
-    def storeDic(self,d):
+    def storeDic(self,dc):
         """
         存储从字符串读取的数据到字典
-        :param d: dic
-        :return: dic
+        :param dc: 字典
+        :return: dict
         """
         rDic = {}
-        for key,value in d.iteritems():
+        for key,value in dc.iteritems():
             if value == None:
                 continue
             rDic[key] = value
@@ -341,7 +344,7 @@ class PyLuaTblParser(object):
 
     def isSpecial(self,value):
         """
-        判读是否为特殊字符串
+        判读是否为特殊字符串nil ,true, false
         :param value: str
         :return: Bool
         """
@@ -461,6 +464,10 @@ class PyLuaTblParser(object):
             raise PatternError()
 
     def parserTable(self,s,begin):
+        """
+
+        :rtype: object
+        """
         begin = self.skip(s,begin)
         self.isOverFlow(begin)
         if s[begin] != '{':
@@ -650,3 +657,46 @@ class PyLuaTblParser(object):
             return rDic
         else:
             return v
+
+    def __getitem__(self, key):
+        """
+        类似于字典的[]读取操作
+        :param key: index
+        :return: value
+        """
+        return self.data[key]
+
+    def __setitem__(self, key, value):
+        """
+        类似于字典的设置操作
+        :param key: index
+        :param value: value
+        :return: None
+        """
+        self.data[key] = value
+
+    def update(self, new):
+        """
+        类似于更新字典的操作
+        :param new:
+        :return:
+        """
+        self.data.update(new)
+
+
+if __name__ == '__main__':
+    # 基础功能能测试
+    a1 = PyLuaTblParser()
+    a2 = PyLuaTblParser()
+    a3 = PyLuaTblParser()
+
+    test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
+    a1.load(test_str)
+    d1 = a1.dumpDict()
+
+    a2.loadDict(d1)
+    a2.dumpLuaTable('test.txt')
+    a3.loadLuaTable('test.txt')
+
+    d3 = a3.dumpDict()
+    print d3

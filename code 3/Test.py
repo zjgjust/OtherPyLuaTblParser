@@ -4,6 +4,8 @@
 from PyLuaTblParser import *
 
 if __name__ == '__main__':
+	
+	#基础功能能测试
     a1 = PyLuaTblParser()
     a2 = PyLuaTblParser()
     a3 = PyLuaTblParser()
@@ -18,6 +20,17 @@ if __name__ == '__main__':
 
     d3 = a3.dumpDict()
     print d3
+
+    #[],update测试
+    print a3['array']
+    a3['array'] = 1234
+    print a3['array']
+    print a3.dumpDict()
+    a3.update({'array':{"one":1,"two":2,"three":3},
+               'zjg': 1,
+               'yhl': 2,
+               'yjs': 3})
+    print a3.dumpDict()
 #附：test_str对应的Python
 """
     dict：
