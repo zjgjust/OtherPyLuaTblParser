@@ -1,0 +1,41 @@
+﻿基于Python 2.7.X 封装实现一个可重用的类，具体要求如下：
+
+基本接口:
+PyLuaTblParser.py 中包含一个class，类名为PyLuaTblParser，类中包含以下方法：
+1. load(self, s)    读取Lua table数据，输入s为一个符合Lua table定义的字符串，无返回值；若遇到Lua table格式错误的应该抛出异常；
+2. dump(self)  根据类中数据返回Lua table字符串
+3. loadLuaTable(self, f)  从文件中读取Lua table字符串，f为文件路径，异常处理同1，文件操作失败抛出异常；
+4. dumpLuaTable(self, f) 将类中的内容以Lua table格式存入文件，f为文件路径，文件若存在则覆盖，文件操作失败抛出异常；
+5. loadDict(self, d)   读取dict中的数据，存入类中，只处理数字和字符串两种类型的key，其他类型的key直接忽略；
+6. dumpDict(self)  返回一个dict，包含类中的数据
+
+基本测试方法：
+a1 = PyLuaTblParser()
+a2 = PyLuaTblParser()
+a3 = PyLuaTblParser()
+
+test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
+a1.load(test_str)
+d1 = a1.dumpDict()
+
+a2.loadDict(d1)
+a2.dumpLuaTable(file_path)
+a3.loadLuaTable(file_path)
+
+d3 = a3.dumpDict()
+
+附：test_str对应的Python dict：
+{
+     "array": [65, 23, 5],
+     "dict": {
+          "mixed": {
+               1: 43,
+               2: 54.33,
+               3: False,
+               4: 9
+               "string": "value"
+          },
+          "array": [3, 6, 4],
+          "string": "value"
+     }
+}
